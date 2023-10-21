@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="item_public_down">#ffc6cbce</item>
+    <item type="drawable" name="item_public_nor">#ffffffff</item>
+    <item type="drawable" name="layout_backgroud">#ff000000</item>
+    <item type="drawable" name="line_background">#ff161823</item>
+</resources>

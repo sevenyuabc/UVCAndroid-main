@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">接送助手</string>
+    <string name="app_network_message">网络连接失败，点击此处检查网络设置</string>
+    <string name="app_welcome_voice">你好我是学加家接送小助手!欢迎使用！</string>
+    <string name="app_exception_network_no">网络连接失败，请检查网络设置</string>
+    <string name="app_exception_connect_no">网络不给力，请重试</string>
+    <string name="app_exception_server">服务器错误，请重试</string>
+    <string name="app_exception_self">小助手飞不动了，快刷新一下试试</string>
+    <string name="toast_refresh_failed">更新失败，请稍后再试！</string>
+    <string name="toast_refresh_successful">更新成功！</string>
+    <string name="dialog_title_waiting">请稍后...</string>
+    <string name="toast_no_sd_card">没有可用的SD卡!</string>
+    <string name="toast_file_not_exist">文件不存在</string>
+    <string name="toast_app_eixt">再按一次退出应用</string>
+    <string name="toast_now_busy">当前刷卡操作过于频繁，请稍候</string>
+    <string name="toast_card_error">当前卡数据异常请告知客服</string>
+    <string name="toast_voice_invalid_card">无效卡</string>
+    <string name="toast_bluetooth_close">如需使用体温枪，请到设置界面打开蓝牙开关!!!</string>
+    <string name="templeature_device_connect">体温枪已连接</string>
+    <string name="templeature_device_disconnect">体温枪已断开</string>
+    <string name="text_upload_card_message">上传记录中，请勿关机</string>
+    <string name="text_tempeature">体温</string>
+    <string name="text_bind_school">绑定学校</string>
+    <string name="text_input_school_ID">请输入学校ID</string>
+    <string name="text_query">查询</string>
+    <string name="text_current_school_info">当前绑定学校信息</string>
+    <string name="text_schoolID">学校ID</string>
+    <string name="text_school_name">学校名称</string>
+    <string name="text_local_city">所在城市</string>
+    <string name="text_voice_switch">语音播报</string>
+    <string name="text_blue_switch">蓝牙开关</string>
+    <string name="text_blue_open">蓝牙已打开</string>
+    <string name="text_blue_close">蓝牙已关闭</string>
+    <string name="text_open">开</string>
+    <string name="text_close">关</string>
+    <string name="text_bluetooth_device">蓝牙设备</string>
+    <string name="activity_mychild_text_card_bind">已绑定</string>
+    <string name="activity_mychild_text_card_unbind">未绑定</string>
+    <string name="text_version_inof">版本信息</string>
+    <string name="text_system_setting">系统设置</string>
+    <string name="text_net_status">网络状态</string>
+    <string name="text_net_setting">网络设置</string>
+    <string name="text_net_check">验证网络</string>
+    <string name="text_machin_id">设备SN</string>
+    <string name="text_machine_mac">MAC地址</string>
+    <string name="submit">提交</string>
+    <string name="yes">确定</string>
+    <string name="no">取消</string>
+    <string name="cancel">取消</string>
+    <string name="setting">设置</string>
+    <string name="edit">编辑</string>
+    <string name="activity_setting_title">设置</string>
+    <string name="activity_about_title">关于</string>
+    <string name="text_intime_school">入园时间</string>
+    <string name="text_outtime_school">离园时间</string>
+    <string name="text_with">到</string>
+
+
+    <string name="superman_ok">确 定</string>
+    <string name="superman_cancel">取 消</string>
+
+    <string name="function_setting">功能设置</string>
+    <string name="voice_name">刷卡播报姓名</string>
+    <string name="card_success">刷卡成功</string>
+    <string name="device_area">所属区域</string>
+    <string name="device_name">设备名称</string>
+    <string name="unbind">解绑</string>
+    <string name="connected">已连接</string>
+    <string name="disconnected">未连接</string>
+    <string name="un_bind">未绑定</string>
+    <string name="playmsg_temp_high">发现高温</string>
+    <string name="playmsg_temp_exception1">测温失败,请重试</string>
+    <string name="playmsg_temp_normal">体温正常</string>
+    <string name="device_text">SN：</string>
+
+</resources>

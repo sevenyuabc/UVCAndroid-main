@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color">#fff2f3f4</color>
+    <color name="background_color_black">#ff000000</color>
+    <color name="background_color_white">#ffffffff</color>
+    <color name="background_color_gray">#fff5f5f5</color>
+    <color name="toolbar_color_white">#fff8f8f8</color>
+    <color name="text_color_white">#ffffffff</color>
+    <color name="text_color_black">#ff2e3138</color>
+    <color name="text_color_gray">#ffaaafb8</color>
+    <color name="text_color_hint">#999999</color>
+    <color name="text_color_blue">#00B4FF</color>
+    <color name="text_color_yellow">#fff3985b</color>
+    <color name="button_color_nor">#ffffffff</color>
+    <color name="button_color_down">#ff415f9c</color>
+    <color name="textview_color_nor">#ff415f9c</color>
+    <color name="textview_color_down">#4c415f9c</color>
+    <color name="text_color_yellow_down">#ffcd6926</color>
+    <color name="text_color_yellow_nor">#fff3985b</color>
+    <color name="text_color_gray_down">#ffc6cbce</color>
+    <color name="text_color_gray_nor">#fff0f1f2</color>
+    <color name="divider_gray">#ffe2e5e7</color>
+    <color name="divider_gray1">#ffa5a5a5</color>
+    <color name="divider_black">#ff29273c</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_half_black">#af000000</color>
+    <color name="transparent_half_white">#7fffffff</color>
+    <!-- 黑半透明 -->
+    <color name="white">#ffffffff</color>
+
+
+    <!--体温计-->
+    <color name="temperature_color_108EE9">#108EE9</color>
+    <color name="temperature_color_FF6C86">#FF6C86</color>
+    <color name="temperature_color_FF9632">#FF9632</color>
+
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_height">48.0dip</dimen>
+    <dimen name="divider_gray_size">1.0px</dimen>
+    <dimen name="text_size_smallest8sp">8.0sp</dimen>
+    <dimen name="text_size_smallest10sp">10.0sp</dimen>
+    <dimen name="text_size_smallest11sp">11.0sp</dimen>
+    <dimen name="text_size_smallest12sp">12.0sp</dimen>
+    <dimen name="text_size_smallest">13.0sp</dimen>
+    <dimen name="text_size_smaller">16.0sp</dimen>
+    <dimen name="text_size_small">20.0sp</dimen>
+    <dimen name="text_size_normal">24.0sp</dimen>
+    <dimen name="text_size_medium">28.0sp</dimen>
+    <dimen name="text_size_large">32.0sp</dimen>
+    <dimen name="text_size_larger">36.0sp</dimen>
+</resources>

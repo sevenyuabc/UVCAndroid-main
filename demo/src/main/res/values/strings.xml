@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name" tools:ignore="MissingTranslation">UVC Demo</string>
+    <string name="entry_basic_preview" tools:ignore="MissingTranslation">Basic Preview</string>
+    <string name="entry_custom_preview" tools:ignore="MissingTranslation">Custom Preview</string>
+    <string name="entry_multi_preview" tools:ignore="MissingTranslation">Multi Preview</string>
+    <string name="entry_multi_camera" tools:ignore="MissingTranslation">Multi Camera Old</string>
+    <string name="entry_multi_camera_new" tools:ignore="MissingTranslation">Multi Camera New</string>
+    <string name="entry_take_picture" tools:ignore="MissingTranslation">Take Picture</string>
+    <string name="entry_record_video" tools:ignore="MissingTranslation">Record Video</string>
+    <string name="entry_set_frame_callback" tools:ignore="MissingTranslation">Set Frame Callback</string>
+    <string name="btn_open_camera" tools:ignore="MissingTranslation">Open Camera</string>
+    <string name="btn_close_camera" tools:ignore="MissingTranslation">Close Camera</string>
+
+    <string name="action_control" tools:ignore="MissingTranslation">Controls</string>
+    <string name="action_video_format" tools:ignore="MissingTranslation">Video Format</string>
+    <string name="action_rotate_90_CW" tools:ignore="MissingTranslation">Rotate 90 CW</string>
+    <string name="action_rotate_90_CCW" tools:ignore="MissingTranslation">Rotate 90 CCW</string>
+    <string name="action_flip_horizontally" tools:ignore="MissingTranslation">Flip Horizontally</string>
+    <string name="action_flip_vertically" tools:ignore="MissingTranslation">Flip Vertically</string>
+
+    <string name="device_list_dialog_title" tools:ignore="MissingTranslation">Device</string>
+    <string name="device_list_empty_tip" tools:ignore="MissingTranslation">Please connect a USB Camera</string>
+    <string name="device_list_cancel_button" tools:ignore="MissingTranslation">Cancel</string>
+
+    <string name="video_format_title" tools:ignore="MissingTranslation">Video Format</string>
+    <string name="video_format_format" tools:ignore="MissingTranslation">Format</string>
+    <string name="video_format_resolution" tools:ignore="MissingTranslation">Resolution</string>
+    <string name="video_format_frame_rate" tools:ignore="MissingTranslation">Frame Rate</string>
+    <string name="video_format_ok_button" tools:ignore="MissingTranslation">OK</string>
+    <string name="video_format_cancel_button" tools:ignore="MissingTranslation">Cancel</string>
+    <string name="video_format_format_yuv" tools:ignore="MissingTranslation">YUV</string>
+    <string name="video_format_format_mjped" tools:ignore="MissingTranslation">MJPEG</string>
+
+    <string name="camera_controls_text_brightness" tools:ignore="MissingTranslation">Brightness</string>
+    <string name="camera_controls_text_contrast" tools:ignore="MissingTranslation">Contrast</string>
+    <string name="camera_controls_text_hue" tools:ignore="MissingTranslation">Hue</string>
+    <string name="camera_controls_text_auto" tools:ignore="MissingTranslation">Auto</string>
+    <string name="camera_controls_text_saturation" tools:ignore="MissingTranslation">Saturation</string>
+    <string name="camera_controls_text_sharpness" tools:ignore="MissingTranslation">Sharpness</string>
+    <string name="camera_controls_text_gamma" tools:ignore="MissingTranslation">Gamma</string>
+    <string name="camera_controls_text_white_balance" tools:ignore="MissingTranslation">White Balance</string>
+    <string name="camera_controls_text_backlight_comp" tools:ignore="MissingTranslation">Backlight Comp</string>
+    <string name="camera_controls_text_gain" tools:ignore="MissingTranslation">Gain</string>
+    <string name="camera_controls_text_exposure_time" tools:ignore="MissingTranslation">ExposureTime</string>
+    <string name="camera_controls_text_iris" tools:ignore="MissingTranslation">Iris</string>
+    <string name="camera_controls_text_focus" tools:ignore="MissingTranslation">Focus</string>
+    <string name="camera_controls_text_zoom" tools:ignore="MissingTranslation">Zoom</string>
+    <string name="camera_controls_text_pan" tools:ignore="MissingTranslation">Pan</string>
+    <string name="camera_controls_text_tilt" tools:ignore="MissingTranslation">Tilt</string>
+    <string name="camera_controls_text_roll" tools:ignore="MissingTranslation">Roll</string>
+    <string name="camera_controls_text_disable" tools:ignore="MissingTranslation">Disable</string>
+    <string name="camera_controls_text_50hz" tools:ignore="MissingTranslation">50Hz</string>
+    <string name="camera_controls_text_60hz" tools:ignore="MissingTranslation">60Hz</string>
+    <string name="camera_controls_button_close" tools:ignore="MissingTranslation">Close</string>
+    <string name="camera_controls_button_reset" tools:ignore="MissingTranslation">Reset</string>
+
+    <string name="btn_open" tools:ignore="MissingTranslation">Open</string>
+    <string name="btn_close" tools:ignore="MissingTranslation">Close</string>
+</resources>

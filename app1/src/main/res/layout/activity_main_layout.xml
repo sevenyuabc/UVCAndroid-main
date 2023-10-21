@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="378dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/home_bg_blue" />
+
+    <FrameLayout
+        android:id="@+id/fl_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/name_bg">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="520dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="86dp"
+            android:ellipsize="marquee"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_setting"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="354dp"
+        android:layout_marginRight="24dp"
+        android:focusable="true"
+        android:background="@drawable/setting_selector" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_camera"
+        android:layout_width="920dp"
+        android:layout_height="960dp"
+        android:layout_below="@id/fl_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardCornerRadius="32dp"
+        card_view:cardElevation="0dp">
+
+        <FrameLayout
+            android:id="@+id/fl_surface_view"
+            android:layout_width="920dp"
+            android:layout_height="960dp">
+
+            <SurfaceView
+                android:id="@+id/surfaceView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <com.cicada.kidscard.view.banner.BannerView
+            android:id="@+id/bannerView"
+            android:layout_width="920dp"
+            android:layout_height="960dp"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.cicada.kidscard.view.TemperatureView
+                android:id="@+id/temperatureView"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.cicada.kidscard.view.CardInfoView
+        android:id="@+id/card_info_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl_title"
+        android:layout_marginTop="800dp"
+        android:visibility="gone" />
+
+    <com.cicada.kidscard.view.TimeInfoView
+        android:layout_width="920dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv_camera"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+</RelativeLayout>

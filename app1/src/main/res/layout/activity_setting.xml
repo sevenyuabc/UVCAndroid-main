@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="51dp"
+        android:layout_marginBottom="51dp"
+        android:background="@drawable/home_bg_blue"
+        android:orientation="vertical"
+        android:padding="56dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <Button
+                android:id="@id/imageViewBack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_close_selector" />
+
+            <TextView
+                android:id="@id/buttonTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center|top"
+                android:singleLine="true"
+                android:text="绑定学校"
+                android:textColor="@color/text_color_blue"
+                android:textSize="@dimen/text_size_larger"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@id/buttonSubmit"
+                android:layout_width="100dp"
+                android:layout_height="46dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_button_blue"
+                android:singleLine="true"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal" />
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:singleLine="true"
+                    android:text="绑定设置"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="14dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageViewBack"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@id/textView1"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/text_bind_school"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <EditText
+                            android:id="@id/editTextSchoolID"
+                            android:layout_width="0dp"
+                            android:layout_height="36dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="30dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_textview_time"
+                            android:cursorVisible="true"
+                            android:gravity="center_vertical"
+                            android:hint="@string/text_input_school_ID"
+                            android:inputType="number"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="3dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="3dp"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color_black"
+                            android:textColorHint="@color/text_color_hint"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/text_size_normal" />
+
+
+                        <Button
+                            android:id="@id/buttonFindSchool"
+                            android:layout_width="80dp"
+                            android:layout_height="36dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/blue_btn_selector"
+                            android:text="@string/text_query"
+                            android:textColor="@color/text_color_blue"
+                            android:textSize="@dimen/text_size_small" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:singleLine="true"
+                        android:text="@string/text_current_school_info"
+                        android:textColor="#666"
+                        android:textSize="@dimen/text_size_normal"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/text_schoolID"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <TextView
+                            android:id="@id/textViewSchoolID"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/text_school_name"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <TextView
+                            android:id="@id/textViewSchoolName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="14dp">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/text_local_city"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <TextView
+                            android:id="@id/textViewSchoolCity"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_normal" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="14dp"
+                    android:text="@string/function_setting"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="14dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="14dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.5"
+                            android:text="@string/text_voice_switch"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <RadioGroup
+                            android:id="@id/radioGroupVoiceStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/voice_open"
+                                style="@style/radio_btn"
+                                android:background="@drawable/comm_text_blue_selector"
+                                android:padding="10dp"
+                                android:text="@string/text_open" />
+
+                            <RadioButton
+                                android:id="@+id/voice_close"
+                                style="@style/radio_btn"
+                                android:padding="10dp"
+                                android:background="@drawable/comm_text_blue_selector"
+                                android:text="@string/text_close" />
+
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llVoiceName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="14dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.5"
+                            android:text="@string/voice_name"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <RadioGroup
+                            android:id="@+id/radioGroupVoiceNameStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/nameOpen"
+                                style="@style/radio_btn"
+                                android:padding="10dp"
+                                android:background="@drawable/comm_text_blue_selector"
+                                android:text="@string/text_open" />
+
+                            <RadioButton
+                                android:id="@+id/nameClose"
+                                style="@style/radio_btn"
+                                android:padding="10dp"
+                                android:background="@drawable/comm_text_blue_selector"
+                                android:text="@string/text_close" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="14dp"
+                    android:text="@string/text_system_setting"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.5"
+                            android:text="@string/text_system_setting"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <Button
+                            android:id="@id/system_setting"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/blue_btn_selector"
+                            android:singleLine="true"
+                            android:text="@string/setting"
+                            android:textColor="@color/text_color_blue"
+                            android:textSize="@dimen/text_size_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/text_bluetooth_device"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <TextView
+                            android:id="@+id/tv_bluetooth_device_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <TextView
+                            android:id="@+id/tv_bluetooth_device_mac"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <Button
+                            android:id="@+id/btn_unbind"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/blue_btn_selector"
+                            android:singleLine="true"
+                            android:text="@string/unbind"
+                            android:textColor="@color/text_color_blue"
+                            android:textSize="@dimen/text_size_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:text="@string/text_net_status"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@id/textViewNetworkStatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_color_black"
+                                android:textSize="@dimen/text_size_normal" />
+
+                            <Button
+                                android:id="@id/buttonNetworkSetting"
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/selector_button_green"
+                                android:singleLine="true"
+                                android:text="@string/text_net_setting"
+                                android:textColor="@color/text_color_blue"
+                                android:textSize="@dimen/text_size_normal"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingTop="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:singleLine="true"
+                            android:text="@string/text_machine_mac"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <TextView
+                            android:id="@+id/show_machine_mac"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingTop="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:singleLine="true"
+                            android:text="@string/text_machin_id"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <TextView
+                            android:id="@id/show_machine_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingTop="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:singleLine="true"
+                            android:text="@string/text_version_inof"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <TextView
+                            android:id="@id/textViewVersionName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_normal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
